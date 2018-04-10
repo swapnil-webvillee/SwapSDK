@@ -92,14 +92,8 @@ Pod::Spec.new do |s|
   s.source_files  = "TestSwapSDK", "TestSwapSDK/**/*.{swift}"
 
   # s.public_header_files = "Classes/**/*.h"
-s.frameworks = [
-    "UIKit",
-    "Foundation",
-    "CoreGraphics",
-    "QuartzCore"
-]
-
-s.requires_arc = true
+s.frameworks = ["UIKit","Foundation","CoreGraphics","QuartzCore"]
+s.ios.deployment_target = '10.0'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
